@@ -1,24 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AMw-C4-75A">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Face Mask View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FaceMaskViewController" id="BYZ-38-t0r" customClass="FaceMaskViewController" customModule="Football_AR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tq9-eh-bNx">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6u-KK-H2a">
+                                <rect key="frame" x="151.66666666666666" y="718" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="NXb-Ry-IDB"/>
+                                    <constraint firstAttribute="width" constant="90" id="h6e-ek-gjh"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="circle.inset.filled" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhotoSnapshot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AOd-zD-fNE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m6u-KK-H2a" secondAttribute="bottom" constant="10" id="bZ0-EI-1Ae"/>
+                            <constraint firstAttribute="bottom" secondItem="Tq9-eh-bNx" secondAttribute="bottom" id="dVz-YA-LF6"/>
+                            <constraint firstItem="m6u-KK-H2a" firstAttribute="centerX" secondItem="Tq9-eh-bNx" secondAttribute="centerX" id="glS-TL-kiP"/>
+                            <constraint firstItem="Tq9-eh-bNx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hYS-sA-GOL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tq9-eh-bNx" secondAttribute="trailing" id="pev-ON-nK0"/>
+                            <constraint firstItem="Tq9-eh-bNx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qet-EP-RCr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="photoButton" destination="m6u-KK-H2a" id="BRB-xT-4Qf"/>
+                        <outlet property="sceneView" destination="Tq9-eh-bNx" id="Ujl-8m-NFG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="102" y="4"/>
+        </scene>
+        <!--Stadium View Controller-->
+        <scene sceneID="cYr-Dd-A2S">
+            <objects>
+                <viewController id="mQw-d5-mXp" customClass="StadiumViewController" customModule="Football_AR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UKB-SY-XKP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n1G-HU-5gY">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </arscnView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mJG-oL-OfT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mJG-oL-OfT" firstAttribute="trailing" secondItem="n1G-HU-5gY" secondAttribute="trailing" id="GIK-D5-1gy"/>
+                            <constraint firstAttribute="bottom" secondItem="n1G-HU-5gY" secondAttribute="bottom" id="I27-2R-a40"/>
+                            <constraint firstItem="n1G-HU-5gY" firstAttribute="top" secondItem="UKB-SY-XKP" secondAttribute="top" id="S7b-Rg-cYh"/>
+                            <constraint firstItem="n1G-HU-5gY" firstAttribute="leading" secondItem="mJG-oL-OfT" secondAttribute="leading" id="x1D-M1-c0g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="n1G-HU-5gY" id="mlu-lr-IV5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yPD-ew-d6W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1059" y="4"/>
+        </scene>
+        <!--Detect View Controller-->
+        <scene sceneID="RHz-5v-hC8">
+            <objects>
+                <viewController id="AMw-C4-75A" customClass="DetectViewController" customModule="Football_AR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AvW-YY-NFR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RXA-vL-64M">
+                                <rect key="frame" x="0.0" y="64" width="393" height="708"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30z-w1-20R">
+                                <rect key="frame" x="0.0" y="772" width="393" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="fDj-hL-mTn"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" id="XXM-4Y-bti">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="K0N-BC-hP2">
+                                            <rect key="frame" x="16" y="10" width="361" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="tintColor" red="0.51459126851070724" green="0.6572390207165929" blue="0.80540015300114953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="camera.fill.badge.ellipsis" catalog="system" title="   Choose photo">
+                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="takePhoto:" destination="AMw-C4-75A" eventType="touchUpInside" id="zAY-mc-v3r"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add some photo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycS-Px-OHI">
+                                <rect key="frame" x="80" y="697" width="233" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7zn-cG-wwl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Imj-pP-19H"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="30z-w1-20R" firstAttribute="trailing" secondItem="Imj-pP-19H" secondAttribute="trailing" id="9Ef-Bn-LaI"/>
+                            <constraint firstItem="Imj-pP-19H" firstAttribute="trailing" secondItem="ycS-Px-OHI" secondAttribute="trailing" constant="80" id="I0D-nD-cfu"/>
+                            <constraint firstItem="30z-w1-20R" firstAttribute="top" secondItem="ycS-Px-OHI" secondAttribute="bottom" constant="35" id="KJr-ey-UHB"/>
+                            <constraint firstItem="30z-w1-20R" firstAttribute="leading" secondItem="Imj-pP-19H" secondAttribute="leading" id="Qq1-UC-oIa"/>
+                            <constraint firstAttribute="bottom" secondItem="30z-w1-20R" secondAttribute="bottom" constant="25" id="T0c-xS-XGt"/>
+                            <constraint firstItem="ycS-Px-OHI" firstAttribute="leading" secondItem="Imj-pP-19H" secondAttribute="leading" constant="80" id="dBt-BG-gMF"/>
+                            <constraint firstItem="30z-w1-20R" firstAttribute="top" secondItem="RXA-vL-64M" secondAttribute="bottom" id="dC0-rR-XuB"/>
+                            <constraint firstItem="Imj-pP-19H" firstAttribute="trailing" secondItem="RXA-vL-64M" secondAttribute="trailing" id="jCH-iu-4gC"/>
+                            <constraint firstItem="RXA-vL-64M" firstAttribute="leading" secondItem="Imj-pP-19H" secondAttribute="leading" id="vE6-rC-RvF"/>
+                            <constraint firstItem="RXA-vL-64M" firstAttribute="top" secondItem="Imj-pP-19H" secondAttribute="top" constant="5" id="xgU-56-jzO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="K0N-BC-hP2" id="5gm-NF-RwA"/>
+                        <outlet property="classificationLabel" destination="ycS-Px-OHI" id="EHa-cn-rmp"/>
+                        <outlet property="imageView" destination="RXA-vL-64M" id="Ouv-C0-6rI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32j-L7-64V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-792" y="4"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera.fill.badge.ellipsis" catalog="system" width="128" height="94"/>
+        <image name="circle.inset.filled" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

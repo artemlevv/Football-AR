@@ -9,21 +9,47 @@
 /* Begin PBXBuildFile section */
 		AC194DFE2A3A60A30064FDF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC194DFD2A3A60A30064FDF9 /* AppDelegate.swift */; };
 		AC194E002A3A60A30064FDF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC194DFF2A3A60A30064FDF9 /* SceneDelegate.swift */; };
-		AC194E022A3A60A30064FDF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC194E012A3A60A30064FDF9 /* ViewController.swift */; };
+		AC194E022A3A60A30064FDF9 /* FaceMaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC194E012A3A60A30064FDF9 /* FaceMaskViewController.swift */; };
 		AC194E052A3A60A30064FDF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC194E032A3A60A30064FDF9 /* Main.storyboard */; };
 		AC194E072A3A60A50064FDF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC194E062A3A60A50064FDF9 /* Assets.xcassets */; };
 		AC194E0A2A3A60A50064FDF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC194E082A3A60A50064FDF9 /* LaunchScreen.storyboard */; };
+		AC6E83562A45953C00B0EF50 /* ClubInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E83552A45953C00B0EF50 /* ClubInfoViewController.swift */; };
+		AC6E835A2A45B11300B0EF50 /* ClubInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E83592A45B11300B0EF50 /* ClubInfoView.swift */; };
+		AC70AFB52A48C77C00E1DC9E /* EnglishClub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70AFB42A48C77C00E1DC9E /* EnglishClub.swift */; };
+		AC70AFB82A48C85800E1DC9E /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70AFB72A48C85800E1DC9E /* TeamView.swift */; };
+		AC70AFBA2A48CBEC00E1DC9E /* RunningCompetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70AFB92A48CBEC00E1DC9E /* RunningCompetition.swift */; };
+		ACA006D02A443D710085810F /* DetectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA006CF2A443D710085810F /* DetectViewController.swift */; };
+		ACA006D22A4441CE0085810F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA006D12A4441CE0085810F /* Utilities.swift */; };
+		ACA006D42A4443880085810F /* PL Club Logos.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ACA006D32A4443880085810F /* PL Club Logos.mlmodel */; };
+		ACE1385A2A42EFEB00710895 /* VirtualContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE138592A42EFEB00710895 /* VirtualContent.swift */; };
+		ACE1385C2A42F03500710895 /* FaceMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1385B2A42F03500710895 /* FaceMask.swift */; };
+		ACE1385E2A43145D00710895 /* StadiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1385D2A43145D00710895 /* StadiumViewController.swift */; };
+		ACF439C62A45F564006F75DD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF439C52A45F564006F75DD /* Extensions.swift */; };
+		ACF439C82A464D2B006F75DD /* FootballAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF439C72A464D2B006F75DD /* FootballAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC194DFA2A3A60A30064FDF9 /* Football AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC194DFD2A3A60A30064FDF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC194DFF2A3A60A30064FDF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC194E012A3A60A30064FDF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC194E012A3A60A30064FDF9 /* FaceMaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMaskViewController.swift; sourceTree = "<group>"; };
 		AC194E042A3A60A30064FDF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC194E062A3A60A50064FDF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC194E092A3A60A50064FDF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC194E0B2A3A60A50064FDF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC6E83552A45953C00B0EF50 /* ClubInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubInfoViewController.swift; sourceTree = "<group>"; };
+		AC6E83592A45B11300B0EF50 /* ClubInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubInfoView.swift; sourceTree = "<group>"; };
+		AC70AFB42A48C77C00E1DC9E /* EnglishClub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishClub.swift; sourceTree = "<group>"; };
+		AC70AFB72A48C85800E1DC9E /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		AC70AFB92A48CBEC00E1DC9E /* RunningCompetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningCompetition.swift; sourceTree = "<group>"; };
+		ACA006CF2A443D710085810F /* DetectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectViewController.swift; sourceTree = "<group>"; };
+		ACA006D12A4441CE0085810F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		ACA006D32A4443880085810F /* PL Club Logos.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "PL Club Logos.mlmodel"; sourceTree = "<group>"; };
+		ACE138592A42EFEB00710895 /* VirtualContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualContent.swift; sourceTree = "<group>"; };
+		ACE1385B2A42F03500710895 /* FaceMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMask.swift; sourceTree = "<group>"; };
+		ACE1385D2A43145D00710895 /* StadiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumViewController.swift; sourceTree = "<group>"; };
+		ACF439C52A45F564006F75DD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ACF439C72A464D2B006F75DD /* FootballAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +84,50 @@
 			children = (
 				AC194DFD2A3A60A30064FDF9 /* AppDelegate.swift */,
 				AC194DFF2A3A60A30064FDF9 /* SceneDelegate.swift */,
-				AC194E012A3A60A30064FDF9 /* ViewController.swift */,
+				AC194E012A3A60A30064FDF9 /* FaceMaskViewController.swift */,
+				ACE1385D2A43145D00710895 /* StadiumViewController.swift */,
+				ACA006CF2A443D710085810F /* DetectViewController.swift */,
+				ACA006D32A4443880085810F /* PL Club Logos.mlmodel */,
 				AC194E032A3A60A30064FDF9 /* Main.storyboard */,
 				AC194E062A3A60A50064FDF9 /* Assets.xcassets */,
 				AC194E082A3A60A50064FDF9 /* LaunchScreen.storyboard */,
 				AC194E0B2A3A60A50064FDF9 /* Info.plist */,
+				ACA006D12A4441CE0085810F /* Utilities.swift */,
+				AC6E83552A45953C00B0EF50 /* ClubInfoViewController.swift */,
+				ACF439C52A45F564006F75DD /* Extensions.swift */,
+				ACE138582A42EFC600710895 /* FaceMasks */,
+				AC70AFB62A48C82600E1DC9E /* SwiftUI Views */,
+				AC70AFB32A48C73D00E1DC9E /* Data */,
 			);
 			path = "Football AR";
+			sourceTree = "<group>";
+		};
+		AC70AFB32A48C73D00E1DC9E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				ACF439C72A464D2B006F75DD /* FootballAPI.swift */,
+				AC70AFB42A48C77C00E1DC9E /* EnglishClub.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AC70AFB62A48C82600E1DC9E /* SwiftUI Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC6E83592A45B11300B0EF50 /* ClubInfoView.swift */,
+				AC70AFB72A48C85800E1DC9E /* TeamView.swift */,
+				AC70AFB92A48CBEC00E1DC9E /* RunningCompetition.swift */,
+			);
+			path = "SwiftUI Views";
+			sourceTree = "<group>";
+		};
+		ACE138582A42EFC600710895 /* FaceMasks */ = {
+			isa = PBXGroup;
+			children = (
+				ACE138592A42EFEB00710895 /* VirtualContent.swift */,
+				ACE1385B2A42F03500710895 /* FaceMask.swift */,
+			);
+			path = FaceMasks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +201,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC194E022A3A60A30064FDF9 /* ViewController.swift in Sources */,
+				ACE1385E2A43145D00710895 /* StadiumViewController.swift in Sources */,
+				AC194E022A3A60A30064FDF9 /* FaceMaskViewController.swift in Sources */,
+				AC70AFB82A48C85800E1DC9E /* TeamView.swift in Sources */,
+				AC70AFB52A48C77C00E1DC9E /* EnglishClub.swift in Sources */,
+				ACE1385A2A42EFEB00710895 /* VirtualContent.swift in Sources */,
+				ACA006D02A443D710085810F /* DetectViewController.swift in Sources */,
+				ACE1385C2A42F03500710895 /* FaceMask.swift in Sources */,
 				AC194DFE2A3A60A30064FDF9 /* AppDelegate.swift in Sources */,
+				AC6E835A2A45B11300B0EF50 /* ClubInfoView.swift in Sources */,
+				ACA006D22A4441CE0085810F /* Utilities.swift in Sources */,
+				ACF439C62A45F564006F75DD /* Extensions.swift in Sources */,
+				ACF439C82A464D2B006F75DD /* FootballAPI.swift in Sources */,
 				AC194E002A3A60A30064FDF9 /* SceneDelegate.swift in Sources */,
+				ACA006D42A4443880085810F /* PL Club Logos.mlmodel in Sources */,
+				AC6E83562A45953C00B0EF50 /* ClubInfoViewController.swift in Sources */,
+				AC70AFBA2A48CBEC00E1DC9E /* RunningCompetition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,13 +364,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VNU8KKW4GG;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Football AR/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +379,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ua.edu.ukma.Football-AR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,13 +396,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VNU8KKW4GG;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Football AR/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +411,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ua.edu.ukma.Football-AR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
