@@ -64,6 +64,7 @@ struct ClubInfoView: View {
                     .shadow(radius: 10)
                     .frame(width: 100, height: 60)
                     .padding(.top, 20)
+                    .padding(.bottom, 10)
                     HStack{
                         Spacer()
                         Text(clubName)

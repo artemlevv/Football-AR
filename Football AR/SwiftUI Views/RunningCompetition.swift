@@ -40,6 +40,7 @@ struct RunningCompetition: View {
                                         .padding(10)
                                 }
                             }
+                            .background(.white)
                             .cornerRadius(10)
                             .overlay(RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.backButtonColor, lineWidth: 4))
@@ -70,7 +71,15 @@ struct RunningCompetition_Previews: PreviewProvider {
 func changeSvg(_ filename: String) -> String {
     let extensionToCheck = "svg"
     let newExtension = "png"
-    
+    if filename == "https://crests.football-data.org/397.svg"{
+        return "https://upload.wikimedia.org/wikipedia/ru/thumb/2/24/FC_Brighton_%26_Hove_Albion_Logo.svg/1200px-FC_Brighton_%26_Hove_Albion_Logo.svg.png"
+    }
+    if filename == "https://crests.football-data.org/73.svg"{
+        return "https://assets.stickpng.com/images/580b57fcd9996e24bc43c4ee.png"
+    }
+    if filename == "https://crests.football-data.org/76.svg"{
+        return "https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Wolverhampton_Wanderers.svg/1200px-Wolverhampton_Wanderers.svg.png"
+    }
     if filename.hasSuffix(extensionToCheck) {
         let index = filename.index(filename.endIndex, offsetBy: -extensionToCheck.count)
         let updatedFilename = filename[..<index] + newExtension

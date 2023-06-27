@@ -8,48 +8,52 @@
 import SwiftUI
 
 struct TeamView: View {
-    let coach: Coach
+    let coach: Coach?
     let squad: [Squad]
     var body: some View {
         VStack{
-            VStack{
-                HStack{
-                    Text("Coach")
-                        .font(.system(size: 21, weight: .medium))
-                    Spacer()
-                }
-                HStack{
-                    Text(coach.name)
-                        .font(.system(size: 18))
-                    Text(getCountryFlag(name:coach.nationality))
-                        .font(.system(size: 26))
-                    Spacer()
-                }
-                .padding(.top, 1)
-            }
-            .padding(.leading, 20)
-            VStack{
-                HStack{
-                    Text("Players")
-                        .font(.system(size: 21, weight: .medium))
-                    Spacer()
-                }
-                .padding(.top, 1)
-                ForEach(squad, id: \.id) { squad in
+            if let coach = self.coach, let coachName = coach.name, let coachNat = coach.nationality{
+                VStack{
                     HStack{
-                        Text(squad.name)
+                        Text("Coach")
+                            .font(.system(size: 21, weight: .medium))
+                        Spacer()
+                    }
+                    HStack{
+                        Text(coachName)
                             .font(.system(size: 18))
-                        Text(getCountryFlag(name:squad.nationality))
+                        Text(getCountryFlag(name:coachNat))
                             .font(.system(size: 26))
                         Spacer()
-                        Text(squad.position)
-                            .padding(.trailing, 20)
-                            .font(.system(size: 18, weight: .thin))
                     }
+                    .padding(.top, 1)
                 }
-                .padding(.top, 1)
+                .padding(.leading, 20)
             }
-            .padding(.leading, 20)
+            if !squad.isEmpty{
+                VStack{
+                    HStack{
+                        Text("Players")
+                            .font(.system(size: 21, weight: .medium))
+                        Spacer()
+                    }
+                    .padding(.top, 1)
+                    ForEach(squad, id: \.id) { squad in
+                        HStack{
+                            Text(squad.name)
+                                .font(.system(size: 18))
+                            Text(getCountryFlag(name:squad.nationality))
+                                .font(.system(size: 26))
+                            Spacer()
+                            Text(squad.position)
+                                .padding(.trailing, 20)
+                                .font(.system(size: 18, weight: .thin))
+                        }
+                    }
+                    .padding(.top, 1)
+                }
+                .padding(.leading, 20)
+            }
             Spacer()
         }
     }
@@ -68,6 +72,18 @@ struct TeamView: View {
         }
         if(name == "Northern Ireland"){
             return "🇯🇪"
+        }
+        if(name == "Wales"){
+            return "🏴󠁧󠁢󠁷󠁬󠁳󠁿"
+        }
+        if(name == "DR Congo"){
+            return "🇨🇩"
+        }
+        if(name == "USA"){
+            return "🇺🇸"
+        }
+        if(name == "Cote d\'Ivoire"){
+            return "🇨🇮"
         }
         return countryFlagFromCode(countryCode: countryCode(from: name) ?? "")
     }

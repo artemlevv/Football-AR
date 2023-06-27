@@ -16,9 +16,7 @@ class FaceMaskViewController: UIViewController, ARSessionDelegate {
     @IBOutlet weak var sceneView: ARSCNView!
     
     var faceAnchorsAndContentControllers: [ARFaceAnchor: VirtualContentController] = [:]
-    
-    
-    @IBAction func takePhotoSnapshot(_ sender: Any) {
+   @IBAction func takePhotoSnapshot(_ sender: Any) {
         UIView.animate(withDuration: 0.3, animations: {
                    self.photoButton.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
                    self.photoButton.alpha = 0.5
@@ -37,7 +35,7 @@ class FaceMaskViewController: UIViewController, ARSessionDelegate {
         sceneView.delegate = self
         sceneView.session.delegate = self
         sceneView.automaticallyUpdatesLighting = true
-        // Do any additional setup after loading the view.
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -83,7 +81,6 @@ class FaceMaskViewController: UIViewController, ARSessionDelegate {
     }
 
 }
-
 extension FaceMaskViewController: ARSCNViewDelegate {
         
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
@@ -91,7 +88,7 @@ extension FaceMaskViewController: ARSCNViewDelegate {
         
         // If this is the first time with this anchor, get the controller to create content.
         // Otherwise (switching content), will change content when setting `selectedVirtualContent`.
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { [self] in
             let contentController = FaceMask(clubName: self.clubName)
             if node.childNodes.isEmpty, let contentNode = contentController.renderer(renderer, nodeFor: faceAnchor) {
                 node.addChildNode(contentNode)

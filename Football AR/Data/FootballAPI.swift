@@ -67,14 +67,13 @@ struct Club: Codable{
     var address: String
     var website: String
     var runningCompetitions: [RunCompetitions]
-    var coach: Coach
+    var coach: Coach?
     var squad: [Squad]
 }
 struct Coach: Codable{
-    var id: Int
-    var name: String
-    var nationality: String
-    var contract: Contract
+    var id: Int?
+    var name: String?
+    var nationality: String?
 }
 struct Squad: Codable{
     var id: Int
